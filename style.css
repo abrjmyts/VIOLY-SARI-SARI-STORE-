@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Content Container */
+.container {
+    width: 80%;
+    max-width: 1200px; /* Limits maximum width for large screens */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+p {
+    line-height: 1.6;
+}
+
+/* Products Section (Flexbox layout) */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.product-item {
+    background: #e9ecef; /* Light gray background */
+    padding: 15px;
+    margin: 10px;
+    width: 30%; /* Takes up about a third of the space */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.product-item:hover {
+    transform: translateY(-5px); /* Lifts the item slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Simple Media Query for smaller screens (like mobile) */
+@media (max-width: 600px) {
+    .product-item {
+        width: 90%; /* Products stack vertically on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+
